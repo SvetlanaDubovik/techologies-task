@@ -1,3 +1,57 @@
+html, body {
+  font-size: 10px;
+  color: #242424;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
 
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.page-header {
+  background-color: #242424; }
+
+.page-header__wrapper {
+  margin: 0 10%;
+  padding: 22px 0; }
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-style: italic; }
+  h1 span {
+    font-weight: 200; }
+
+.create-post {
+  background-color: #e4e4e4; }
+
+.create-post__wrapper {
+  margin: 0 10%;
+  padding: 20px 0; }
+
+h2 {
+  font-size: 20px; }
+
+.form__row {
+  display: block;
+  width: 100%; }
+  .form__row input {
+    width: inherit;
+    padding: 5px; }
+    .form__row input ::-webkit-input-placeholder {
+      color: #f3f3f3;
+      font-size: 14px; }
+    .form__row input :-moz-placeholder {
+      color: #f3f3f3;
+      font-size: 14px; }
+    .form__row input ::-moz-placeholder {
+      color: #f3f3f3;
+      font-size: 14px; }
+    .form__row input :-ms-input-placeholder {
+      color: #f3f3f3;
+      font-size: 14px; }
+    .form__row input ::placeholder {
+      color: #f3f3f3;
+      font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

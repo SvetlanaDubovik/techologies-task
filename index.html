@@ -3,9 +3,32 @@
 <head>
   <title>Блог</title>
   <meta charset="utf-8">
-  <link href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet"  href="css/style.css">  
 </head>
 <body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <h1>
+        Test<span> you skill</span>
+      </h1>
+    </div>
+  </header>
+  <section class="create-post">
+    <div class="create-post__wrapper">
+      <h2>Форма создания поста</h2>
+      <form class="form">
+        <div class="form__row">
+          <input type="text" name="title" placeholder="Название поста">
+        </div>
+        <div class="form__row">
+          <textarea rows="10" name="description" placeholder="Содержание поста"></textarea>
+        </div>  
+        <input type="submit" class="btn create-post__btn" value="Создать пост">  
+      </form>
+    </div>
+  </section>
     
 </body>
 </html>

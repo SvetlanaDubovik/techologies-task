@@ -1,0 +1,21 @@
+@import "../../sass/_variables";
+@import "../../sass/_mixins";
+
+.page-header {  
+  background-color: $dark-grey;
+}
+
+.page-header__wrapper {
+  @include container;
+  padding: 22px 0;
+}
+
+h1 {
+  margin: 0;  
+  color: #fff;
+  font-style: italic;  
+  span {
+    font-weight: 200;
+  }
+}
+

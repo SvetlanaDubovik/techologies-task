@@ -1,0 +1,24 @@
+@import "../sass/_variables";
+
+//@mixin container {
+//  min-width: 480px;
+//  max-width: 920px;
+//  margin: 0 auto;
+//
+//  @media #{$desktop-width} {
+//    min-width: 921px;    
+//    max-width: 1843px;
+//  }
+//}
+
+@mixin container {
+  margin: 0 10%;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content;}
+  :-moz-placeholder {@content;}
+  ::-moz-placeholder {@content;}
+  :-ms-input-placeholder {@content;}
+  ::placeholder {@content;}
+}

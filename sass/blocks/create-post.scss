@@ -1,0 +1,29 @@
+@import "../../sass/_variables";
+@import "../../sass/_mixins";
+
+.create-post {
+  background-color: $grey;  
+}
+
+.create-post__wrapper {
+  @include container;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.form__row {
+  display: block;
+  width: 100%;
+  
+  input {
+    width: inherit;
+    padding: 5px;
+    @include placeholder {
+      color: $light-grey;
+      font-size: 14px;
+    }
+  }
+}
