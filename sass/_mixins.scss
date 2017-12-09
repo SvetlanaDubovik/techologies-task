@@ -12,13 +12,20 @@
 //}
 
 @mixin container {
-  margin: 0 10%;
+  margin: 0 8% 0 10%;
 }
 
 @mixin placeholder {
-  ::-webkit-input-placeholder {@content;}
-  :-moz-placeholder {@content;}
-  ::-moz-placeholder {@content;}
-  :-ms-input-placeholder {@content;}
-  ::placeholder {@content;}
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }

@@ -1,4 +1,4 @@
-html, body {
+html, body, input, textarea {
   font-size: 10px;
   color: #242424;
   font-family: "Roboto", sans-serif;
@@ -12,7 +12,7 @@ html, body {
   background-color: #242424; }
 
 .page-header__wrapper {
-  margin: 0 10%;
+  margin: 0 8% 0 10%;
   padding: 22px 0; }
 
 h1 {
@@ -26,8 +26,8 @@ h1 {
   background-color: #e4e4e4; }
 
 .create-post__wrapper {
-  margin: 0 10%;
-  padding: 20px 0; }
+  margin: 0 8% 0 10%;
+  padding: 20px 0 80px; }
 
 h2 {
   font-size: 20px; }
@@ -35,23 +35,36 @@ h2 {
 .form__row {
   display: block;
   width: 100%; }
-  .form__row input {
-    width: inherit;
-    padding: 5px; }
-    .form__row input ::-webkit-input-placeholder {
-      color: #f3f3f3;
-      font-size: 14px; }
-    .form__row input :-moz-placeholder {
-      color: #f3f3f3;
-      font-size: 14px; }
-    .form__row input ::-moz-placeholder {
-      color: #f3f3f3;
-      font-size: 14px; }
-    .form__row input :-ms-input-placeholder {
-      color: #f3f3f3;
-      font-size: 14px; }
-    .form__row input ::placeholder {
-      color: #f3f3f3;
-      font-size: 14px; }
+
+input:not([type="submit"]), textarea {
+  width: 96%;
+  padding: 15px 0 10px 25px;
+  margin-bottom: 15px; }
+  input:not([type="submit"])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #b8b8b8;
+    font-size: 15px; }
+  input:not([type="submit"]):-moz-placeholder, textarea:-moz-placeholder {
+    color: #b8b8b8;
+    font-size: 15px; }
+  input:not([type="submit"])::-moz-placeholder, textarea::-moz-placeholder {
+    color: #b8b8b8;
+    font-size: 15px; }
+  input:not([type="submit"]):-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #b8b8b8;
+    font-size: 15px; }
+
+input[type="submit"] {
+  float: right;
+  display: block;
+  width: 290px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #242424;
+  color: #f3f3f3;
+  border: 1px solid #242424; }
+  input[type="submit"]:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /*# sourceMappingURL=style.css.map */

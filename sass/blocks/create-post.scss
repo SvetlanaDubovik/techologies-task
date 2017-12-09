@@ -7,7 +7,7 @@
 
 .create-post__wrapper {
   @include container;
-  padding: 20px 0;
+  padding: 20px 0 80px;;
 }
 
 h2 {
@@ -16,14 +16,33 @@ h2 {
 
 .form__row {
   display: block;
-  width: 100%;
+  width: 100%; 
+
+}
+
+input:not([type="submit"]), textarea{
+  width:96%;
+  padding: 15px 0 10px 25px;
+  margin-bottom: 15px;  
   
-  input {
-    width: inherit;
-    padding: 5px;
-    @include placeholder {
-      color: $light-grey;
-      font-size: 14px;
-    }
+  @include placeholder() {
+    color: #b8b8b8;
+    font-size: 15px;
   }
 }
+
+input[type="submit"] {
+  float: right;
+  display: block;
+  width: 290px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: $dark-grey;
+  color: $light-grey;
+  border: 1px solid $dark-grey;
+
+  @include clearfix;
+}
+
+
+
