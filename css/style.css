@@ -91,6 +91,22 @@ input[type="submit"] {
 
 .blog__item_wrapper {
   margin: 0 8% 0 10%; }
+  .blog__item_wrapper hr {
+    margin-left: 10px;
+    width: 95%; }
+
+.btn-back {
+  font-size: 18px; }
+  .btn-back span {
+    font-size: 60px;
+    font-weight: 200;
+    vertical-align: bottom; }
+
+.btn-back__img {
+  display: block;
+  background: url("../../img/arrow-back.png") top left no-repeat;
+  width: 30px;
+  height: 30px; }
 
 .post__description {
   font-size: 18px;
