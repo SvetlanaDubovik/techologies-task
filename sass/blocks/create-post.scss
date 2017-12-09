@@ -33,10 +33,10 @@ input:not([type="submit"]), textarea{
 
 input[type="submit"] {
   float: right;
-  display: block;
+//  display: block;
   width: 290px;
   padding: 10px;
-  font-size: 15px;
+//  font-size: 15px;
   background-color: $dark-grey;
   color: $light-grey;
   border: 1px solid $dark-grey;
