@@ -76,11 +76,10 @@ input[type="submit"] {
   padding: 10px;
   background-color: #242424;
   color: #f3f3f3;
-  border: 1px solid #242424; }
-  input[type="submit"]:after {
-    content: "";
-    display: table;
-    clear: both; }
+  border: 1px solid #242424;
+  content: "";
+  display: table;
+  clear: both; }
 
 .blog__item {
   width: 100%;
@@ -91,22 +90,36 @@ input[type="submit"] {
 
 .blog__item_wrapper {
   margin: 0 8% 0 10%; }
-  .blog__item_wrapper hr {
-    margin-left: 10px;
-    width: 95%; }
+
+.blog__line {
+  display: block;
+  height: 1px;
+  margin: 66px 0 95px 10px;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .btn-back {
-  font-size: 18px; }
-  .btn-back span {
-    font-size: 60px;
-    font-weight: 200;
-    vertical-align: bottom; }
-
-.btn-back__img {
+  position: relative;
+  font-size: 18px;
   display: block;
-  background: url("../../img/arrow-back.png") top left no-repeat;
-  width: 30px;
-  height: 30px; }
+  width: 80px;
+  padding: 15px 0 15px 58px;
+  background-color: #f3f3f3;
+  margin-top: 10px;
+  margin-bottom: 40px; }
+  .btn-back::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 28px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    width: 15px;
+    height: 15px;
+    box-shadow: inset -2px 2px rgba(255, 255, 255, 0.3); }
 
 .post__description {
   font-size: 18px;

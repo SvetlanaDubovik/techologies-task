@@ -12,28 +12,41 @@
 
 .blog__item_wrapper {
   @include container;
-  hr {
-    margin-left: 10px;
-    width: 95%;
-  }
+}
+
+.blog__line {
+  display: block;
+  height: 1px;
+  margin: 66px 0 95px 10px;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-back {
+  position: relative;
   font-size: 18px;
-
+  display: block;
+  width: 80px;
+  padding: 15px 0 15px 58px;
+  background-color: #f3f3f3;
+  margin-top: 10px;
+  margin-bottom: 40px;
   
-  span {
-    font-size: 60px;
-    font-weight: 200;
-    vertical-align: bottom;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 28px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    width: 15px;
+    height: 15px;
+    box-shadow: inset -2px 2px rgba(255, 255, 255, 0.3);
   }
 }
 
-.btn-back__img {
-  display: block;
-  background: url("../../img/arrow-back.png") top left no-repeat;
-  width: 30px;
-  height: 30px;
-}
 
 
