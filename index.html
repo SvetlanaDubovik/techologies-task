@@ -21,13 +21,13 @@
         <h2>Форма создания поста</h2>
         <form class="form">
           <div class="form__row">
-            <input type="text" name="title" placeholder="Название поста">
+            <input type="text" name="title" placeholder="Название поста"  id="postName">
           </div>
           <div class="form__row">
-            <textarea rows="11" name="description" placeholder="Содержание поста"></textarea>
+            <textarea rows="11" name="description" placeholder="Содержание поста" required id="postDescription"></textarea>
           </div>
           <div class="form__row">  
-            <input type="submit" class="btn create-post__btn" value="Создать пост">  
+            <input type="submit" class="btn create-post__btn" value="Создать пост" id="createPost">  
           </div>
         </form>
       </div>
@@ -75,6 +75,7 @@
    <div class="footer__wrapper">
       <a href="#" class="btn ">Показать еще</a>
     </div>
-  </footer>  
+  </footer>
+  <script src="js/create-post.js"></script>  
 </body>
 </html> 

@@ -42,5 +42,9 @@ input[type="submit"] {
   @include clearfix;
 }
 
+.not-filled {
+  border: 1px solid red;
+}
+
 
 
