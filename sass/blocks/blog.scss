@@ -6,7 +6,7 @@
   padding: 35px 0 15px;
 }
 
-.blog__item:nth-child(even) {
+.blog__item_odd {
   background-color: $light-grey;
 }
 
@@ -18,17 +18,15 @@
   display: block;
   height: 1px;
   margin: 66px 0 95px 10px;
-  width: 95%;
+  width: 96%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-back {
   position: relative;
-  font-size: 18px;
   display: block;
   width: 80px;
   padding: 15px 0 15px 58px;
-  background-color: #f3f3f3;
   margin-top: 10px;
   margin-bottom: 40px;
   
@@ -39,7 +37,7 @@
     left: 28px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    border: 2px solid #000;
+    border: 2px solid $black;
     border-top: none;
     border-right: none;
     width: 15px;

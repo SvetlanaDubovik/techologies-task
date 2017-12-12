@@ -1,5 +1,5 @@
 html, body, input, textarea {
-  font-size: 10px;
+  font-size: 18px;
   color: #242424;
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
@@ -24,7 +24,8 @@ h3 {
 
 .btn {
   display: block;
-  font-size: 15px; }
+  font-size: 15px;
+  background-color: #f3f3f3; }
 
 .page-header {
   background-color: #242424; }
@@ -91,7 +92,7 @@ input[type="submit"] {
   width: 100%;
   padding: 35px 0 15px; }
 
-.blog__item:nth-child(even) {
+.blog__item_odd {
   background-color: #f3f3f3; }
 
 .blog__item_wrapper {
@@ -101,16 +102,14 @@ input[type="submit"] {
   display: block;
   height: 1px;
   margin: 66px 0 95px 10px;
-  width: 95%;
+  width: 96%;
   background-color: rgba(0, 0, 0, 0.2); }
 
 .btn-back {
   position: relative;
-  font-size: 18px;
   display: block;
   width: 80px;
   padding: 15px 0 15px 58px;
-  background-color: #f3f3f3;
   margin-top: 10px;
   margin-bottom: 40px; }
   .btn-back::after {
@@ -128,7 +127,6 @@ input[type="submit"] {
     box-shadow: inset -2px 2px rgba(255, 255, 255, 0.3); }
 
 .post__description {
-  font-size: 18px;
   margin-top: 30px;
   padding-left: 10px;
   line-height: 1.4;
@@ -137,13 +135,13 @@ input[type="submit"] {
 .footer__wrapper {
   margin: 0 8% 0 10%;
   margin-bottom: 50px; }
-  .footer__wrapper .btn {
+  .footer__wrapper .btn_more {
+    display: none;
     width: 100%;
-    background-color: #f3f3f3;
+    margin-top: 20px;
     margin-left: 10px;
     padding: 15px 0;
     text-align: center;
-    font-size: 18px;
     font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */
