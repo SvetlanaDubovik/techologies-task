@@ -15,12 +15,10 @@
       let header3 = document.createElement('h3');
       let header3Link = document.createElement('a');
       header3Link.href = 'post.html?title=' + name + '&descr=' + description;
-//      header3Link.classList.add('link');
       let postDescription = document.createElement('p');
       postDescription.classList.add('post__description');
       postDescription.textContent = description;
       header3Link.textContent = name;
-//      header3Link.addEventListener('click', window.openPost.openPostHandler);
       header3.appendChild(header3Link);
       post.appendChild(header3);
       post.appendChild(postDescription);
@@ -46,27 +44,19 @@
         postDiscription.textContent = description;
         
         let blogItem = temp.content.querySelector('.blog__item');
-//        blogItem.id = id;
+        blogItem.id = id;
         if (!odd) {
           blogItem.classList.add('blog__item_odd');
         } else {
-           blogItem.classList.remove('blog__item_odd');
+          blogItem.classList.remove('blog__item_odd');
         }
         
         let blog = document.querySelector('.blog');
         let firstBlogChild = blog.firstChild;
         blog.insertBefore(temp.content.cloneNode(true), firstBlogChild);
-        
-//        headerLink.onclick = (function (id) { //сделать param1,param2 принадлежащими вызываемой функции
-//    return function () { //на событие вешаем функцию, а не результат выполнения функции!
-//        openPostHandler();
-//    };
-//})(id);
-        
       } else {
         window.data.createArticleWithoutTemplate(name, description, id);
       }
-
     }
   };
   

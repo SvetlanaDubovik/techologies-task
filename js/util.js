@@ -1,8 +1,7 @@
 "use strict";
 
-(function() { 
-   
-  let s4 = function() {
+(function() {    
+  let generateRandomSymbol = function() {
     return Math.floor((1 + Math.random()) * 0x10000)
       .toString(16)
       .substring(1);
@@ -10,9 +9,9 @@
   
   window.util = {
     generateGUID: function() {  
-      return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-        s4() + '-' + s4() + s4() + s4();
-     }
+      return generateRandomSymbol() + generateRandomSymbol() +   '-' + generateRandomSymbol() + '-' +   generateRandomSymbol() + '-' +
+      generateRandomSymbol() + '-' + generateRandomSymbol() + generateRandomSymbol() + generateRandomSymbol();
+    }
   };
   
 })();

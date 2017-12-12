@@ -1,13 +1,7 @@
 "use strict";
 
 (function() {
-  
-//  window.createPost = {
-//    openPostHandler: function(evt) {
-//      
-//    }
-//  };
-  
+
   let createMsg = function(field) {
     let fieldClass = 'not-filled__msg_' + field.id;
     let notFilledMsg = document.querySelector('.' + fieldClass);
@@ -22,7 +16,6 @@
     } 
   };
     
-  //Если в текстэрия ввести энтеры, то она засчитает это за символы и, соответственно, ругаться не станет
   let checkField = function(field) {
     let fieldVal = field.value;
     if(fieldVal.length) {
@@ -59,24 +52,16 @@
     post.odd = isOddElem;
     let startDate = new Date()
     let now = new Date();
-    post.date = now.getTime();
+    post.date = now.getTime();    
     
-    
-    let serialPost = JSON.stringify(post);
-    
+    let serialPost = JSON.stringify(post);    
     localStorage.setItem(post.id, serialPost);
-    
-    //при вводе инфы в оба поля по нажатию на энтер не происходит события сабмит
-    
-    
     
     if (post.name && post.description) {
         window.data.createArticle(post.name, post.description, post.id, isOddElem);
         let form = document.querySelector('.form');
         form.reset();
       }
-    
-//    window.showMore.activateShowMore(blog.children);
   };
   
   let form = document.querySelector('.form');
@@ -108,7 +93,7 @@ let loadPostsHandler = function() {
   let postsObjArr = [];
   
   if (localStorage.length) {
-  
+    
   for (var i = 0; i < localStorage.length; i++) {
     let postsObj = {
       name: null,
@@ -134,13 +119,7 @@ let loadPostsHandler = function() {
     window.data.createArticle(postsObjArr[j].name, postsObjArr[j].descr, postsObjArr[j].id, postsObjArr[j].odd);
   }
     
-    let blog = document.querySelector('.blog');
-//    let postsCount = blog.
-    
-  window.showMore.activateShowMore(blog.children);
-    
-    
+  let blog = document.querySelector('.blog');    
+  window.showMore.activateShowMore(blog.children);    
   }
-  
-
 };
