@@ -36,12 +36,17 @@
     top: 18px;
     left: 28px;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     border-left: 2px solid $black;
     border-bottom: 2px solid $black;
     width: 15px;
     height: 15px;
   }
+}
+
+#postsDetail {
+  display: none;
 }
 
 

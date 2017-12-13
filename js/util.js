@@ -11,6 +11,10 @@
     generateGUID: function() {  
       return generateRandomSymbol() + generateRandomSymbol() +   '-' + generateRandomSymbol() + '-' +   generateRandomSymbol() + '-' +
       generateRandomSymbol() + '-' + generateRandomSymbol() + generateRandomSymbol() + generateRandomSymbol();
+    },
+    
+    compareDate: function(obj1, obj2) {
+      return obj1.date - obj2.date;
     }
   };
   

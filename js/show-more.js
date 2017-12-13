@@ -7,7 +7,7 @@
     let blog = document.querySelector('.blog');
       
     for (let i = 0; i < elementsCount; i++) {
-      blog.children[i].style = 'block';
+      blog.children[i].style.display = 'block';
     }
       
     btn.style.display = 'none';

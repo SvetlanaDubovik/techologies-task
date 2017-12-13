@@ -58,7 +58,7 @@
     localStorage.setItem(post.id, serialPost);
     
     if (post.name && post.description) {
-        window.data.createArticle(post.name, post.description, post.id, isOddElem);
+        window.data.createArticle(post.name, post.description, post.id, post.odd);
         let form = document.querySelector('.form');
         form.reset();
       }
@@ -85,10 +85,6 @@
   
 })();
 
-function compareDate(obj1, obj2) {
-  return obj1.date - obj2.date;
-}
-
 let loadPostsHandler = function() {
   let postsObjArr = [];
   
@@ -113,7 +109,7 @@ let loadPostsHandler = function() {
     postsObj.date = value.date;
     postsObjArr.push(postsObj);
   }
-    postsObjArr.sort(compareDate);
+    postsObjArr.sort(window.util.compareDate);
   
   for (let j = 0; j < postsObjArr.length; j++) {
     window.data.createArticle(postsObjArr[j].name, postsObjArr[j].descr, postsObjArr[j].id, postsObjArr[j].odd);

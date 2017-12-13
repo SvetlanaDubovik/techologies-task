@@ -55,7 +55,7 @@
         let firstBlogChild = blog.firstChild;
         blog.insertBefore(temp.content.cloneNode(true), firstBlogChild);
       } else {
-        window.data.createArticleWithoutTemplate(name, description, id);
+        window.data.createArticleWithoutTemplate(name, description, id, odd);
       }
     }
   };

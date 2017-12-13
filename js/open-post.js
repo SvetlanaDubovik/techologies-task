@@ -11,6 +11,7 @@
     blogItemWrapper.classList.add('blog__item_wrapper');
     let btnBack = document.createElement('a');
     btnBack.href = "javascript:history.back()";
+    btnBack.classList.add('btn');
     btnBack.classList.add('btn-back');
     btnBack.textContent = "Назад";
     blogItemWrapper.appendChild(btnBack);
@@ -45,7 +46,7 @@
       blog.appendChild(temp.content.cloneNode(true));
         
     } else {
-      window.data.createPostWithoutTemplate(name, description);
+      createPostWithoutTemplate(name, description);
     }
    },
    
